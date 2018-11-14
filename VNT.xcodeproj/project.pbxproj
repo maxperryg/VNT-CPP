@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7280E186219CE00700A7C801 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7280E185219CE00700A7C801 /* main.cpp */; };
-		7280E18F219CE1C200A7C801 /* SafeMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7280E18E219CE1C200A7C801 /* SafeMatrix.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		7280E182219CE00700A7C801 /* VNT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VNT; sourceTree = BUILT_PRODUCTS_DIR; };
 		7280E185219CE00700A7C801 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7280E18E219CE1C200A7C801 /* SafeMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SafeMatrix.cpp; path = ../../safeArray/safeArray/SafeMatrix.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 		7280E184219CE00700A7C801 /* VNT */ = {
 			isa = PBXGroup;
 			children = (
-				7280E18E219CE1C200A7C801 /* SafeMatrix.cpp */,
 				7280E185219CE00700A7C801 /* main.cpp */,
 			);
 			path = VNT;
@@ -122,7 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7280E186219CE00700A7C801 /* main.cpp in Sources */,
-				7280E18F219CE1C200A7C801 /* SafeMatrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
