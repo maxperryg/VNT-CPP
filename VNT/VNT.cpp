@@ -49,21 +49,14 @@ public:
         
         while (r > 0) {
             c = width - 1;
-            /* If the cell on top of our value contains a
-             bigger value, swap values */
             if (matrix[r - 1][c] > matrix[r][c])
                 swap(matrix[r - 1][c], matrix[r][c]);
             while (c > 0) {
-                /* If the value is at the most upper rightmost corner
-                 and the cell to its left has a greater value */
                 if (r == 1 && (matrix[r - 1][c - 1] > matrix[r - 1][c])) {
-                    // Swap value with the cell to its left
                     swap(matrix[r - 1][c - 1], matrix[r - 1][c]);
-                    // Swap cell below our value with the cell to its left
                     swap(matrix[r][c - 1], matrix[r][c]);
                 }
                 else if (matrix[r][c - 1] > matrix[r][c]) {
-                    // Swap cell below our value with the cell to its left
                     swap(matrix[r][c - 1], matrix[r][c]);
                 }
                 c--;
@@ -84,21 +77,14 @@ public:
         
         while (r < height - 1) {
             c = 0;
-            /* If the cell on below of our value contains a
-             bigger value, swap values */
             if (matrix[r + 1][c] > matrix[r][c])
                 swap(matrix[r + 1][c], matrix[r][c]);
             while (c < width - 1) {
-                /* If the value is at the most lowest leftmost corner
-                 and the cell to its right has a greater value */
                 if (r == height - 2 && (matrix[r + 1][c + 1] > matrix[r + 1][c])) {
-                    // Swap value with the cell to its right
                     swap(matrix[r + 1][c + 1], matrix[r + 1][c]);
-                    // Swap cell above our value with the cell to its right
                     swap(matrix[r][c + 1], matrix[r][c]);
                 }
                 else if (matrix[r][c + 1] < matrix[r][c]) {
-                    // Swap cell above our value with the cell to its right
                     swap(matrix[r][c + 1], matrix[r][c]);
                 }
                 c++;
@@ -121,7 +107,6 @@ public:
         while (r >= 0 && value < matrix[r][c]) {
             r--;
         }
-            // If value is greater than cell's value, go right
         while(value > matrix[r][c] && c < width - 1) {
             c++;
         }
